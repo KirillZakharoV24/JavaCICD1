@@ -1,7 +1,7 @@
 import org.example.StatisticService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 public class StatisticsServiceTest {
 
@@ -16,8 +16,8 @@ public class StatisticsServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
-    
-     @Test
+
+    @Test
     void findnotMax() {
         StatisticService service = new StatisticService();
 
@@ -27,4 +27,5 @@ public class StatisticsServiceTest {
         long actual = service.findMax(incomesInBillions);
 
         Assertions.assertEquals(expected, actual);
+    }
 }
